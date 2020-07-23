@@ -15,7 +15,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                     
+                    {{--@can('update',$entry)--}}
                     {{$entry->content}}
                     @if($entry->user_id === auth()->id())
                     <hr>
